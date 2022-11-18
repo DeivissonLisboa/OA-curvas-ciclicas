@@ -1,0 +1,67 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+  display: contents;
+}
+
+header,
+h3,
+#construcoes {
+  margin-top: 1.5rem !important;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: black !important;
+}
+
+.fancy {
+  padding: 0 0.15rem;
+  color: white;
+  background-color: gold;
+}
+
+h1 .fancy {
+  padding: 0.25rem 1rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 720px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+#construcoes p {
+  text-align: justify;
+  text-indent: 1.5rem;
+}
+
+.container img {
+  max-width: 100%;
+}
+
+#simulator {
+  align-self: center;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+#params {
+  border: 1px solid black;
+}
+
+footer {
+  margin: 3rem 0 0.5rem 0;
+  padding-top: 1rem;
+  color: gray;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador Curvas Ciclicas</title>
+    <link rel="stylesheet" href="./src//style/style.css" />
+    <link rel="stylesheet" href="./src/style/bootstrap.min.css" />
+    <script src="./src/script/bootstrap.bundle.js"></script>
+    <script src="./src/script/p5.min.js"></script>
+    <script src="./src/script/simulador.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">
+          <span class="fancy">Curvas Ciclicas</span>
+        </h1>
+        <a href="">Deivisson Lisboa</a>
+      </header>
+
+      <div id="construcoes">
+        <h2>Construções geométricas</h2>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Consectetur adipiscing elit pellentesque habitant morbi tristique
+            senectus et. Non tellus orci ac auctor augue mauris augue. Ultrices
+            dui sapien eget mi proin sed libero. Pharetra massa massa ultricies
+            mi quis hendrerit dolor. Eu consequat ac felis donec et. Massa sed
+            elementum tempus egestas sed sed risus pretium. Phasellus faucibus
+            scelerisque eleifend donec pretium vulputate sapien. Amet massa
+            vitae tortor condimentum lacinia quis vel. Ornare arcu odio ut sem.
+            Nulla pellentesque dignissim enim sit. Orci porta non pulvinar neque
+            laoreet suspendisse interdum consectetur. Lobortis mattis aliquam
+            faucibus purus in massa tempor. Lorem mollis aliquam ut porttitor
+            leo. Quis hendrerit dolor magna eget est. Sagittis aliquam malesuada
+            bibendum arcu vitae elementum curabitur.
+          </p>
+          <img
+            src="./src/images/cicloide_5.png"
+            alt="Construção geometrica completa de um ciclo de um cicloide simples."
+          />
+        </article>
+
+        <article>
+          <h3>Retificação da Circunferência</h3>
+          <p>
+            A erat nam at lectus urna duis convallis. Lacus sed turpis tincidunt
+            id aliquet risus feugiat. Parturient montes nascetur ridiculus mus
+            mauris vitae. Elit ullamcorper dignissim cras tincidunt lobortis
+            feugiat vivamus. Eleifend quam adipiscing vitae proin sagittis nisl
+            rhoncus. Parturient montes nascetur ridiculus mus. Dapibus ultrices
+            in iaculis nunc sed augue. Dictum at tempor commodo ullamcorper a
+            lacus vestibulum. Imperdiet massa tincidunt nunc pulvinar. Cras
+            semper auctor neque vitae tempus quam pellentesque nec nam.
+          </p>
+        </article>
+
+        <article>
+          <h3>Cicloide</h3>
+          <p>
+            Lorem donec massa sapien faucibus et molestie ac feugiat sed. Velit
+            laoreet id donec ultrices tincidunt arcu non sodales neque. In nisl
+            nisi scelerisque eu ultrices vitae. Morbi quis commodo odio aenean
+            sed adipiscing diam. Pulvinar etiam non quam lacus suspendisse
+            faucibus interdum. Viverra orci sagittis eu volutpat odio. Dictumst
+            vestibulum rhoncus est pellentesque elit ullamcorper dignissim.
+            Lobortis feugiat vivamus at augue eget arcu dictum. Porta lorem
+            mollis aliquam ut. In dictum non consectetur a erat nam at lectus
+            urna.
+          </p>
+        </article>
+
+        <article>
+          <h3>Epicicloide</h3>
+          <p>
+            Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis.
+            Suspendisse sed nisi lacus sed viverra. Libero enim sed faucibus
+            turpis in eu mi. At imperdiet dui accumsan sit amet nulla facilisi.
+            Iaculis urna id volutpat lacus laoreet non. Erat nam at lectus urna
+            duis convallis. Quis ipsum suspendisse ultrices gravida dictum fusce
+            ut placerat orci. Aliquam purus sit amet luctus venenatis lectus.
+            Amet luctus venenatis lectus magna fringilla urna. Nulla posuere
+            sollicitudin aliquam ultrices sagittis orci a scelerisque purus.
+            Bibendum est ultricies integer quis auctor elit. Vel orci porta non
+            pulvinar. Nisi lacus sed viverra tellus in hac habitasse platea.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam.
+          </p>
+        </article>
+
+        <article>
+          <h3>Hipocicloide</h3>
+          <p>
+            Aliquet bibendum enim facilisis gravida neque convallis a. Est velit
+            egestas dui id ornare arcu. Vel orci porta non pulvinar neque
+            laoreet suspendisse interdum consectetur. Ornare quam viverra orci
+            sagittis eu volutpat. Rhoncus est pellentesque elit ullamcorper
+            dignissim cras tincidunt. Nec nam aliquam sem et tortor consequat id
+            porta nibh. Morbi tristique senectus et netus et malesuada. Libero
+            volutpat sed cras ornare arcu dui vivamus arcu felis. Scelerisque
+            felis imperdiet proin fermentum leo vel orci. Est velit egestas dui
+            id ornare arcu odio. Pellentesque massa placerat duis ultricies
+            lacus sed turpis tincidunt. Id leo in vitae turpis massa sed
+            elementum tempus. Volutpat diam ut venenatis tellus in metus
+            vulputate eu.
+          </p>
+        </article>
+      </div>
+
+      <h2>Simulador</h2>
+      <div id="simulator">
+        <div id="canvas"></div>
+        <div id="params">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Curva
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item">Cicloide</a></li>
+              <li><a class="dropdown-item">Epicicloide</a></li>
+              <li><a class="dropdown-item">Hipocicloide</a></li>
+            </ul>
+          </div>
+          <button id="animation-button" type="button" class="btn btn-primary">
+            COMEÇAR
+          </button>
+          <div id="params_container">
+            <div id="raio">
+              <label for="range-raio" class="form-label">Raio</label>
+              <input
+                type="range"
+                id="range-raio"
+                class="form-range"
+                min="1"
+                max="5"
+              />
+            </div>
+            <div id="distanciap">
+              <label for="range-distanciap" class="form-label">Distância</label>
+              <input
+                type="range"
+                id="range-distancia"
+                class="form-range"
+                min="-2"
+                max="2"
+              />
+            </div>
+            <div id="velocidade">
+              <label for="range-velocidade" class="form-label"
+                >Velocidade</label
+              >
+              <input
+                type="range"
+                id="range-velocidade"
+                class="form-range"
+                min="1"
+                max="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div id="bibliografia">
+          Bibliografia:
+          <p>
+            de Oliveira, Juscelino Wanderson. "Curvas Planas Parametrizadas,
+            Curvas Cicloidais e Espirógrafo." (2018).
+          </p>
+        </div>
+
+        <p>Figuras produzinas pelo autor utilizando Geogebra.</p>
+      </footer>
+    </div>
+    <script src="./src/script/script.js"></script>
+  </body>
+</html>
