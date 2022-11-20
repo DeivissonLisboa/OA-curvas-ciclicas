@@ -18,7 +18,11 @@
         <h1 id="title">
           <span class="fancy">Curvas Ciclicas</span>
         </h1>
-        <a href="">Deivisson Lisboa</a>
+        <a
+          href="https://github.com/DeivissonLisboa/OA-curvas-ciclicas"
+          target="_blank"
+          >Deivisson Lisboa</a
+        >
       </header>
 
       <div id="construcoes">
@@ -162,9 +166,17 @@
               tautócrona</span
             >.
           </p>
+          <figure>
+            <img
+              src="./src/images/cicloide.png"
+              alt="Primeiro ciclo de uma ciclóide simples"
+            />
+            <figcaption>Primeiro ciclo de uma ciclóide simples</figcaption>
+          </figure>
+          <br />
           <p>
-            Dado uma circunferência e sua retificação, seguimos o seguinte
-            roteiro:
+            <b>Construção de um ciclóide:</b> Dado uma circunferência e sua
+            retificação, seguimos o seguinte roteiro:
           </p>
           <figure>
             <img
@@ -290,14 +302,14 @@
         </article>
 
         <article>
-          <h3>Epicicloide</h3>
+          <h3>Epiciclóide</h3>
           <p>
             <b>Definição:</b> Chama-se de epiciclóide a curva descrita por um
             ponto de um raio de uma circunferência de rola externamente, sem
             escorregar, sobre outra circunferência fixa.
           </p>
           <p>
-            <b><span class="fancy">Epicicloide notavel:</span></b> Sejam R e r
+            <b><span class="fancy">Epicicloide notável:</span></b> Sejam R e r
             os raios das circunferências diretora e geradora, respectivamente,
             de uma epiciclóide. Se
             <figure>
@@ -323,67 +335,277 @@
             <figcaption>Epiciclóide notavel de n=3 ciclos</figcaption>
           </figure>
           <br />
+          <p>
+            <b>Construção de uma epiciclóide notável:</b> Dados uma
+            circunferência diretriz e geratriz de raio 3 e 1, respectivamente,
+            seguimos o seguinte roteiro:
+          </p>
+          <figure>
+            <img
+              src="./src/images/epicicloide_0.png"
+              alt="Circunferência diretriz de raio 3 e geratriz de raio 1"
+            />
+            <figcaption>
+              Circunferência diretriz de raio 3 e geratriz de raio 1
+            </figcaption>
+          </figure>
           <ul>
-            <li></li>
+            <li>
+              Como a <span class="fancy">razão entros os raios é 3</span>,
+              sabemos que se trata de uma
+              <span class="fancy">epicicloide notavel de 3 ciclos</span>. Logo
+              <span class="fancy"
+                >devemos dividir a circunferência diretriz em três partes
+                iguais</span
+              >, mas como iremos construir apenas um dos ciclos, apenas a
+              primeira divisão é necessaria;
+              <ul>
+                <li>
+                  Como
+                  <span class="fancy"
+                    >360º/3 = 120º, podemos criar o segmento OP e a partir do
+                    ponto O criar um angulo de 120º</span
+                  >, assim encontrando o ponto Q.
+                </li>
+              </ul>
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_0.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_1.png"
+                alt="Ângulo POQ de 120º"
+              />
+              <figcaption>Ângulo POQ de 120º</figcaption>
             </figure>
 
-            <li></li>
+            <li>
+              Assim como na ciclóide, devemos
+              <span class="fancy"
+                >dividir tanto a circunferência geratriz quanto</span
+              >, agora se tratando de um arco,
+              <span class="fancy"
+                >o arco PQ em um mesmo número de partes iguais</span
+              >;
+              <ul>
+                <li>
+                  Dicidir o arco em partes iguais é tão simples quanto fazer a
+                  bissetriz do angulo POQ e seguir fazendo quantas bissetrizes
+                  forem necessárias com os demais ângulos que são formados.
+                </li>
+              </ul>
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_1.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_2.png"
+                alt="Circunferência menor e arco divididos em 8 partes iguais"
+              />
+              <figcaption>
+                Circunferência menor e arco divididos em 8 partes iguais
+              </figcaption>
             </figure>
 
-            <li></li>
+            <li>
+              Com centro em O, trace arcos auxiliares passando pelos pontos da
+              circunferência menor;
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_2.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_3.png"
+                alt="Arcos auxiliares"
+              />
+              <figcaption>Arcos auxiliares</figcaption>
             </figure>
 
-            <li></li>
+            <li>
+              Com <span class="fancy">distância P1 e centro 1'</span> e 7'
+              (porque ambos tem a mesma distância, P1 = P7) trace arcos que
+              intersectam o arco auxiliar criado no passo anterior e que passa
+              por esses pontos. Assim teremos os primeros pontos da curva;
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_3.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_4.png"
+                alt="Primeiros pontos da curva"
+              />
+              <figcaption>Primeiros pontos da curva</figcaption>
             </figure>
 
-            <li></li>
+            <li>
+              O passo anterior deve ser repetido para as demais divisões da
+              circunferência;
+              <ul>
+                <li>
+                  Novamente, o ponto que encontraremos na divisão 4' pode ser
+                  encontrado por um segmento de reta definido por O4' e que
+                  intersecta o arco auxiliar que passa pelo ponto 4.
+                </li>
+              </ul>
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_4.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_5.png"
+                alt="Construção completa da epicicloide"
+              />
+              <figcaption>Construção completa da epicicloide</figcaption>
             </figure>
 
-            <li></li>
+            <li>Agora tracamos a curva ligando os pontos encontrados.</li>
             <figure>
-              <img src="./src/images/epicicloide_5.png" alt="" />
-              <figcaption></figcaption>
-            </figure>
-
-            <li></li>
-            <figure>
-              <img src="./src/images/epicicloide_6.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_6.png"
+                alt="Traçado completo do primeiro ciclo da epicicloide"
+              />
+              <figcaption>
+                Traçado completo do primeiro ciclo da epicicloide
+              </figcaption>
             </figure>
           </ul>
+          <br />
+          <span>
+            <b>Curiosidade:</b> A equação paramétrica que define uma epiciclóide
+            é dada por:
+          </span>
+          <figure>
+            <img
+              src="./src/images/epicicloide_parametrica.png"
+              alt="Equação parametrica do epiciclóide"
+              style="margin: 1rem 0"
+            />
+            <figcaption>Que fofa!</figcaption>
+          </figure>
         </article>
 
         <article>
-          <h3>Hipocicloide</h3>
+          <h3>Hipociclóide</h3>
           <p>
-            Aliquet bibendum enim facilisis gravida neque convallis a. Est velit
-            egestas dui id ornare arcu. Vel orci porta non pulvinar neque
-            laoreet suspendisse interdum consectetur. Ornare quam viverra orci
-            sagittis eu volutpat. Rhoncus est pellentesque elit ullamcorper
-            dignissim cras tincidunt. Nec nam aliquam sem et tortor consequat id
-            porta nibh. Morbi tristique senectus et netus et malesuada. Libero
-            volutpat sed cras ornare arcu dui vivamus arcu felis. Scelerisque
-            felis imperdiet proin fermentum leo vel orci. Est velit egestas dui
-            id ornare arcu odio. Pellentesque massa placerat duis ultricies
-            lacus sed turpis tincidunt. Id leo in vitae turpis massa sed
-            elementum tempus. Volutpat diam ut venenatis tellus in metus
-            vulputate eu.
+            <b>Definição:</b> Chama-se de hipociclóide a curva descrita por um
+            ponto de um raio ou do prolongamento de um raio de uma
+            circunferência que rola internamente sem escorregar sobre uma outra
+            circunferência fixa.
           </p>
+          <p>
+            Os conceitos de circunferência geradora, circunferência diretora e
+            ponto gerador são idênticos aos já estudados no ciclóide e
+            epiciclóide. O mesmo ocorre com o conceito de hipociclóide notavel,
+            onde o número de ciclos é dado pela razão entre os raios.
+          </p>
+          <figure>
+            <img
+              src="./src/images/hipocicloide.png"
+              alt="Hipociclóide completa de 3 ciclos"
+            />
+            <figcaption>Hipociclóide completa de 3 ciclos</figcaption>
+          </figure>
+          <br />
+          <p><b>Construção de uma hipociclóide notável:</b></p>
+          <ul>
+            <li>
+              Na figura abaixo vemos a circunferência diretriz de raio 3 e em
+              seu interiror a circunferência geretriz de raio 1;
+            </li>
+            <figure>
+              <img
+                src="./src/images/hipocicloide_0.png"
+                alt="Circunferência diretriz de raio 3 e geratriz de raio 1"
+              />
+              <figcaption>
+                Circunferência diretriz de raio 3 e geratriz de raio 1
+              </figcaption>
+            </figure>
+
+            <li>
+              Assim como na epiciclóide, dividimos a circunferência diretriz em
+              três partes, por se tratar de uma hipociclóide notavel de 3
+              ciclos. Observe que o ângulo POQ = 120º;
+            </li>
+            <figure>
+              <img
+                src="./src/images/hipocicloide_1.png"
+                alt="Arco de 120º que delimita o primeiro ciclo"
+              />
+              <figcaption>
+                Arco de 120º que delimita o primeiro ciclo
+              </figcaption>
+            </figure>
+
+            <li>Reparta o arco PQ em oito partes iguais;</li>
+            <figure>
+              <img
+                src="./src/images/hipocicloide_2.png"
+                alt="Divisão do arco PQ em 8 partes iguais"
+              />
+              <figcaption>Divisão do arco PQ em 8 partes iguais</figcaption>
+            </figure>
+
+            <li>
+              Divida a circunferência geratriz em um mesmo número de partes que
+              o arco foi dividido no passo anterior;
+            </li>
+            <figure>
+              <img
+                src="./src/images/hipocicloide_3.png"
+                alt="Divisão da circunferência menor em 8 partes iguais"
+              />
+              <figcaption>
+                Divisão da circunferência menor em 8 partes iguais
+              </figcaption>
+            </figure>
+
+            <li>
+              Construa arcos auxiliares passando pelos pontos do arco menor;
+            </li>
+            <figure>
+              <img
+                src="./src/images/hipocicloide_4.png"
+                alt="Arcos auxiliares"
+              />
+              <figcaption>Arcos auxiliares</figcaption>
+            </figure>
+
+            <li>
+              Com distância P1 e centro 1' e 7', trace arcos passando pelo arco
+              auxiliar que passa por esses pontos;
+            </li>
+            <figure>
+              <img
+                src="./src/images/hipocicloide_5.png"
+                alt="Primeiros pontos da curva"
+              />
+              <figcaption>Primeiros pontos da curva</figcaption>
+            </figure>
+
+            <li>Repita o passo anterior para os demais pontos do arco;</li>
+            <figure>
+              <img
+                src="./src/images/hipocicloide_6.png"
+                alt="Construção completa do primeiro ciclo da hipociclóide"
+              />
+              <figcaption>
+                Construção completa do primeiro ciclo da hipociclóide
+              </figcaption>
+            </figure>
+
+            <li>Trace a curva ligando os pontos encontrados.</li>
+            <figure>
+              <img
+                src="./src/images/hipocicloide_7.png"
+                alt="traçado completo do primeiro ciclo"
+              />
+              <figcaption>traçado completo do primeiro ciclo</figcaption>
+            </figure>
+          </ul>
+
+          <span>
+            <b>Curiosidade:</b> A equação paramétrica que define uma
+            Hipociclóide é dada por:
+          </span>
+          <figure>
+            <img
+              src="./src/images/hipocicloide_parametrica.png"
+              alt="Equação parametrica do hipocicloide"
+              style="margin: 1rem 0"
+            />
+            <figcaption></figcaption>
+          </figure>
         </article>
       </div>
 
