@@ -327,49 +327,143 @@
             <figcaption>Epiciclóide notavel de n=3 ciclos</figcaption>
           </figure>
           <br />
+          <p>
+            Dados uma circunferência diretriz e geratriz de raio 3 e 1,
+            respectivamente. Seguimos o seguinte roteiro:
+          </p>
+          <figure>
+            <img
+              src="./src/images/epicicloide_0.png"
+              alt="Circunferência diretriz de raio 3 e geratriz de raio 1"
+            />
+            <figcaption>
+              Circunferência diretriz de raio 3 e geratriz de raio 1
+            </figcaption>
+          </figure>
           <ul>
-            <li></li>
+            <li>
+              Como a <span class="fancy">razão entros os raios é 3</span>,
+              sabemos que se trata de uma
+              <span class="fancy">epicicloide notavel de 3 ciclos</span>. Logo
+              <span class="fancy"
+                >devemos dividir a circunferência diretriz em três partes
+                iguais</span
+              >, mas como iremos construir apenas um dos ciclos, apenas a
+              primeira divisão é necessaria;
+              <ul>
+                <li>
+                  Como
+                  <span class="fancy"
+                    >360º/3 = 120º, podemos criar o segmento OP e a partir do
+                    ponto O criar um angulo de 120º</span
+                  >, assim encontrando o ponto Q.
+                </li>
+              </ul>
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_0.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_1.png"
+                alt="Ângulo POQ de 120º"
+              />
+              <figcaption>Ângulo POQ de 120º</figcaption>
             </figure>
 
-            <li></li>
+            <li>
+              Assim como na ciclóide, devemos
+              <span class="fancy"
+                >dividir tanto a circunferência geratriz quanto</span
+              >, agora se tratando de um arco,
+              <span class="fancy"
+                >o arco PQ em um mesmo número de partes iguais</span
+              >;
+              <ul>
+                <li>
+                  Dicidir o arco em partes iguais é tão simples quanto fazer a
+                  bissetriz do angulo POQ e seguir fazendo quantas bissetrizes
+                  forem necessárias com os demais ângulos que são formados.
+                </li>
+              </ul>
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_1.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_2.png"
+                alt="Circunferência menor e arco divididos em 8 partes iguais"
+              />
+              <figcaption>
+                Circunferência menor e arco divididos em 8 partes iguais
+              </figcaption>
             </figure>
 
-            <li></li>
+            <li>
+              Com centro em O, trace arcos auxiliares passando pelos pontos da
+              circunferência menor;
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_2.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_3.png"
+                alt="Arcos auxiliares"
+              />
+              <figcaption>Arcos auxiliares</figcaption>
             </figure>
 
-            <li></li>
+            <li>
+              Com <span class="fancy">distância P1 e centro 1'</span> e 7'
+              (porque ambos tem a mesma distância, P1 = P7) trace arcos que
+              intersectam o arco auxiliar criado no passo anterior e que passa
+              por esses pontos. Assim teremos os primeros pontos da curva;
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_3.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_4.png"
+                alt="Primeiros pontos da curva"
+              />
+              <figcaption>Primeiros pontos da curva</figcaption>
             </figure>
 
-            <li></li>
+            <li>
+              O passo anterior deve ser repetido para as demais divisões da
+              circunferência;
+              <ul>
+                <li>
+                  Novamente, o ponto que encontraremos na divisão 4' pode ser
+                  encontrado por um segmento de reta definido por O4' e que
+                  intersecta o arco auxiliar que passa pelo ponto 4.
+                </li>
+              </ul>
+            </li>
             <figure>
-              <img src="./src/images/epicicloide_4.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_5.png"
+                alt="Construção completa da epicicloide"
+              />
+              <figcaption>Construção completa da epicicloide</figcaption>
             </figure>
 
-            <li></li>
+            <li>Agora tracamos a curva ligando os pontos encontrados.</li>
             <figure>
-              <img src="./src/images/epicicloide_5.png" alt="" />
-              <figcaption></figcaption>
-            </figure>
-
-            <li></li>
-            <figure>
-              <img src="./src/images/epicicloide_6.png" alt="" />
-              <figcaption></figcaption>
+              <img
+                src="./src/images/epicicloide_6.png"
+                alt="Traçado completo do primeiro ciclo da epicicloide"
+              />
+              <figcaption>
+                Traçado completo do primeiro ciclo da epicicloide simples de 3
+                ciclos
+              </figcaption>
             </figure>
           </ul>
+          <br />
+          <span>
+            <b>Curiosidade:</b> A equação paramétrica que define uma epiciclóide
+            é dada por:
+          </span>
+          <figure>
+            <img
+              src="./src/images/epicicloide_parametrica.png"
+              alt="Equação parametrica do ciclóide"
+              style="margin: 1rem 0"
+            />
+            <figcaption>Que fofa!</figcaption>
+          </figure>
         </article>
 
         <article>
