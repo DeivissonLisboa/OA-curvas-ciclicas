@@ -3,6 +3,7 @@ body {
   height: 100vh;
   /* overflow: hidden; */
   display: contents;
+  font-family: "Roboto", sans-serif;
 }
 
 header,
@@ -46,8 +47,21 @@ h2 {
   text-indent: 1.5rem;
 }
 
+li {
+  text-align: justify;
+}
+
 .container img {
   max-width: 100%;
+}
+
+.sidebyside {
+  display: flex;
+}
+
+figure {
+  text-align: center;
+  color: gray;
 }
 
 #simulator {
