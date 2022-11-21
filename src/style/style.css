@@ -4,6 +4,7 @@ body {
   /* overflow: hidden; */
   display: contents;
   font-family: "Roboto", sans-serif;
+  font-size: 1.15rem !important;
 }
 
 header,
@@ -20,6 +21,10 @@ header {
 
 a {
   color: black !important;
+}
+
+.content {
+  margin-top: 2rem;
 }
 
 .fancy {

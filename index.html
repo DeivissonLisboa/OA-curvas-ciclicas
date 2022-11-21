@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curvas Ciclicas</title>
     <link rel="stylesheet" href="./src//style/style.css" />
+    <link rel="stylesheet" href="./src/style/bootstrap.min.css" />
+    <script src="./src/script/bootstrap.bundle.js"></script>
+    <script src="./src/script/p5.min.js"></script>
+    <script src="./src/script/simulador.js"></script>
     <link rel="icon" type="image/x-icon" href="./src/images/icon.png" />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1 id="title">
-          <span class="fancy">Curvas Ciclicas</span>
-        </h1>
+        <a href="#" style="text-decoration: none"
+          ><h1 id="title">
+            <span class="fancy">Curvas Ciclicas</span>
+          </h1></a
+        >
         <a
           href="https://github.com/DeivissonLisboa/OA-curvas-ciclicas"
           target="_blank"
@@ -21,21 +27,17 @@
         >
       </header>
 
+      <div class="content">
+        <ol>
+          <li><a href="#h2_construcoes">Construções geométricas</a></li>
+          <li><a href="#cicloide">Ciclóide</a></li>
+          <li><a href="#epicicloide">Epiciclóide</a></li>
+          <li><a href="#hipocicloide">Hipociclóide</a></li>
+        </ol>
+      </div>
+
       <div id="construcoes">
-        <h2>Construções geométricas</h2>
         <article>
-          <p>
-            <span class="fancy">O estudo da geometria</span> é necessário para o
-            desenvolvimento completo do aluno, pois
-            <span class="fancy"
-              >desenvolve a percepção espacial, age na construção do
-              conhecimento, instiga o educando a conjecturar, a
-              experimentar.</span
-            >
-            Facilita ao aluno o desempenho de tarefas do quotidiano, como
-            interpretar um mapa ou compreender um gráfico estatístico.
-            (Bolgheroni, W., & Silveira, I. F., 2008).
-          </p>
           <p>
             As Curvas Cíclicas, também conhecidas como curvas cicloidais, são
             curvas onde o
@@ -88,79 +90,139 @@
           </div>
         </article>
 
+        <h2 id="h2_construcoes">Construções geométricas</h2>
+
         <article>
-          <h3>Retificação da Circunferência</h3>
+          <h5>Como posso reproduzir as construções apresentadas no site?</h5>
           <p>
-            Para a construção da ciclóide é necessário que saibamos retificar a
-            circunferência. método que nada mais é que "desenrolar" a
-            circunferência e transferir todo seu comprimento para uma reta.
+            Para desenhar a mão será necessário papel, grafite, compasso e
+            régua, mas os mesmos passos podem ser seguidos utilizando um
+            software gratuito de geométria como o Geogebra.
           </p>
+
+          <h5>O que eu preciso saber?</h5>
           <p>
-            Um dos métodos para retificação é conhecido como
-            <span class="fancy">Processo de Arquimedes</span>, nele o
-            <span class="fancy"
-              >diâmeto é dividido em sete partes iguais e o comprimento da
-              circunferência é</span
-            >
-            aproximadamente igual a vinte e duas dessas partes, o mesmo que
-            <span class="fancy">três vezes o diâmetro mais um sétimo</span>.
-            Sabendo disso, seguimos o seguinte roteiro:
+            É importante que o aluno saiba fazer, bem rapidinho, as seguintes
+            construções:
           </p>
           <ul>
             <li>
-              Utilizando o teorema de Tales, divida o diâmetro em sete partes;
+              <b>Mediatriz:</b> Lugar geometrico onde todos os pontos são
+              equidistantes de dois pontos dados... em outras palavras, é a
+              <span class="fancy"
+                >reta perpendicular ao segmento que passa pelo seu ponto
+                médio.</span
+              >
+              <ul>
+                <li>
+                  Dado o segmento AB, trace arcos auxiliares de cento A e B de
+                  raio um pouco maior que a média do segmento (ambos os arcos
+                  tem o mesmo raio);
+                </li>
+                <figure>
+                  <img
+                    src="./src/images/mediatriz_0.png"
+                    alt="Segmento AB e arcos auxiliares"
+                  />
+                  <figcaption>Segmento AB e arcos auxiliares</figcaption>
+                </figure>
+
+                <li>
+                  A reta que contem a intersecção desses arcos é a mediatriz que
+                  procuramos.
+                </li>
+                <figure>
+                  <img
+                    src="./src/images/mediatriz_1.png"
+                    alt="Reta mediatriz completa"
+                  />
+                  <figcaption>Reta mediatriz completa</figcaption>
+                </figure>
+              </ul>
             </li>
-            <figure>
-              <img
-                src="./src/images/retificacao_0.png"
-                alt="Diamâtro dividido em sete partes"
-              />
-              <figcaption>Diamâtro dividido em sete partes iguais</figcaption>
-            </figure>
+
             <li>
-              Transfira três vezes o tamanho do diâmetro e mais uma das partes
-              divididas para uma reta qualquer, como na figura abaixo, formando
-              o segmento BQ = comprimento da circunferência.
+              <b>Bissetriz:</b> é uma semirreta que
+              <span class="fancy">divide um ângulo em dois</span>
+              ângulos congruentes.
+              <ul>
+                <li>
+                  Dado o ângulo AOB. Com centro em O, trace um arco de raio
+                  qualquer para encontrar os pontos C e D;
+                  <figure>
+                    <img src="./src/images/bissetriz_0.png" alt="ângulo AOB" />
+                    <figcaption>ângulo AOB</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  A partir desses pontos trace arcos de mesmo raio. A semirreta
+                  definida pelo ponto O e a intersecção dos arcos criados é a
+                  bissetriz desejada.
+                  <figure>
+                    <img
+                      src="./src/images/bissetriz_1.png"
+                      alt="Traçado da bissetriz"
+                    />
+                    <figcaption>Traçado da bissetriz</figcaption>
+                  </figure>
+                </li>
+              </ul>
             </li>
-            <figure>
-              <img
-                src="./src/images/retificacao_1.png"
-                alt="Circunferência retificada"
-              />
-              <figcaption>Circunferência retificada</figcaption>
-            </figure>
+
+            <li>
+              <b>Retificação:</b> Para a construção da ciclóide é necessário que
+              saibamos retificar a circunferência, processo onde obtemos um
+              segmento de reta cuja medida é igual ao comprimento da
+              circunferência (2πr).
+              <p>
+                Um dos métodos para retificação é conhecido como
+                <span class="fancy">Processo de Arquimedes</span>, nele o
+                <span class="fancy"
+                  >diâmeto é dividido em sete partes iguais e o comprimento da
+                  circunferência é</span
+                >
+                aproximadamente igual a vinte e duas dessas partes, o mesmo que
+                <span class="fancy">três vezes o diâmetro mais um sétimo</span>.
+                Sabendo disso, seguimos o seguinte roteiro:
+              </p>
+              <ul>
+                <li>
+                  Utilizando o teorema de Tales, divida o diâmetro em sete
+                  partes;
+                </li>
+                <figure>
+                  <img
+                    src="./src/images/retificacao_0.png"
+                    alt="Diamâtro dividido em sete partes"
+                  />
+                  <figcaption>
+                    Diamâtro dividido em sete partes iguais
+                  </figcaption>
+                </figure>
+                <li>
+                  Transfira três vezes o tamanho do diâmetro e mais uma das
+                  partes divididas para uma reta qualquer, como na figura
+                  abaixo, formando o segmento BQ = comprimento da
+                  circunferência.
+                </li>
+                <figure>
+                  <img
+                    src="./src/images/retificacao_1.png"
+                    alt="Circunferência retificada"
+                  />
+                  <figcaption>Circunferência retificada</figcaption>
+                </figure>
+              </ul>
+            </li>
           </ul>
         </article>
 
         <article>
-          <h3>Ciclóide</h3>
+          <h3 id="cicloide">Ciclóide</h3>
           <p>
             <b>Definição:</b> Chama-se ciclóide uma curva plana descrita por um
             ponto de um raio de uma circunferência que rola sem escorregamento
             sobre uma reta.
-          </p>
-          <p>
-            A ciclóide possui duas características, no mínimo muito curiosas: é
-            braquistócrona e tautócrona. Na verdade,
-            <span class="fancy"
-              >a cicloide é a trajetória de menor tempo percorrido por uma
-              partícula entre dois pontos contidos no mesmo plano</span
-            >, que não estão na vertical; é portanto,
-            <span class="fancy">braquistócrona</span>.
-          </p>
-          <p>
-            Agora, se colocarmos uma cicloide virada para cima (cicloide
-            invertida) e deixarmos deslizar sobre ela
-            <span class="fancy"
-              >duas partículas, a partir de pontos diferentes</span
-            >, estes chegarão ao mesmo tempo ao ponto de cota mínima da curva.
-            Em outras palavras, sendo uma partícula largada em cima de uma
-            cicloide invertida e apenas sujeita à ação da gravidade, ela
-            <span class="fancy"
-              >demora sempre o mesmo tempo a chegar ao ponto mínimo da curva,
-              qualquer que seja a sua posição inicial; portanto, a cicloide é
-              tautócrona</span
-            >.
           </p>
           <figure>
             <img
@@ -169,10 +231,48 @@
             />
             <figcaption>Primeiro ciclo de uma ciclóide simples</figcaption>
           </figure>
-          <br />
           <p>
-            <b>Construção de um ciclóide:</b> Dado uma circunferência e sua
-            retificação, seguimos o seguinte roteiro:
+            A ciclóide possui duas características, no mínimo muito curiosas:
+          </p>
+          <ul>
+            <li>
+              <b>Braquistócrona:</b> é a
+              <span class="fancy"
+                >trajetória de menor tempo percorrido por uma partícula entre
+                dois pontos</span
+              >
+              contidos no mesmo plano, que não estão na vertical;
+            </li>
+            <figure>
+              <img src="./src/images/braquistocrona.gif" alt="Braquistócrona" />
+              <figcaption>Fonte: gabibici.blogspot.com</figcaption>
+            </figure>
+            <li>
+              <b>Tautócrona:</b>
+              Agora, se colocarmos uma cicloide virada para cima (cicloide
+              invertida) e deixarmos deslizar sobre ela
+              <span class="fancy"
+                >duas partículas, a partir de pontos diferentes, estes chegarão
+                ao mesmo tempo ao ponto de cota mínima da curva.</span
+              >
+              Em outras palavras, sendo uma partícula largada em cima de uma
+              cicloide invertida e apenas sujeita à ação da gravidade, ela
+              <span class="fancy"
+                >demora sempre o mesmo tempo a chegar ao ponto mínimo da curva,
+                qualquer que seja a sua posição inicial.</span
+              >
+            </li>
+            <figure>
+              <img src="./src/images/tautocrona.gif" alt="Tautócrona" />
+              <figcaption>Fonte: pedrofigro.blogspot.com</figcaption>
+            </figure>
+          </ul>
+
+          <br />
+          <h5>Construção da ciclóide</h5>
+          <p>
+            Dado uma circunferência e sua retificação, seguimos o seguinte
+            roteiro:
           </p>
           <figure>
             <img
@@ -298,7 +398,7 @@
         </article>
 
         <article>
-          <h3>Epiciclóide</h3>
+          <h3 id="epicicloide">Epiciclóide</h3>
           <p>
             <b>Definição:</b> Chama-se de epiciclóide a curva descrita por um
             ponto de um raio de uma circunferência de rola externamente, sem
@@ -331,10 +431,10 @@
             <figcaption>Epiciclóide notavel de n=3 ciclos</figcaption>
           </figure>
           <br />
+          <h5>Construção de uma epiciclóide notável</h5>
           <p>
-            <b>Construção de uma epiciclóide notável:</b> Dados uma
-            circunferência diretriz e geratriz de raio 3 e 1, respectivamente,
-            seguimos o seguinte roteiro:
+            Dados uma circunferência diretriz e geratriz de raio 3 e 1,
+            respectivamente, seguimos o seguinte roteiro:
           </p>
           <figure>
             <img
@@ -471,7 +571,7 @@
         </article>
 
         <article>
-          <h3>Hipociclóide</h3>
+          <h3 id="hipocicloide">Hipociclóide</h3>
           <p>
             <b>Definição:</b> Chama-se de hipociclóide a curva descrita por um
             ponto de um raio ou do prolongamento de um raio de uma
@@ -492,7 +592,7 @@
             <figcaption>Hipociclóide completa de 3 ciclos</figcaption>
           </figure>
           <br />
-          <p><b>Construção de uma hipociclóide notável:</b></p>
+          <h5>Construção de uma hipociclóide notável</h5>
           <ul>
             <li>
               Na figura abaixo vemos a circunferência diretriz de raio 3 e em
@@ -547,7 +647,8 @@
             </figure>
 
             <li>
-              Construa arcos auxiliares passando pelos pontos do arco menor;
+              Construa arcos auxiliares de centro O passando pelos pontos do
+              arco menor;
             </li>
             <figure>
               <img
@@ -628,11 +729,6 @@
           <p>
             JOTA, José Carlos Putnoki. "Elementos de Geometria e Desenho
             Geométrico vol III" Editora Scipione Ltda., São Paulo (1989).
-          </p>
-          <p>
-            Bolgheroni, Waldiney, and Ismar Frango Silveira. "Software livre
-            aplicado ao ensino de geometria e desenho geométrico." Anais do
-            Workshop de Informática na Escola. Vol. 1. No. 1. 2008.
           </p>
         </div>
 
