@@ -69,10 +69,17 @@ figure {
   color: gray;
 }
 
-#simulator {
-  align-self: center;
-  border: 1px solid black;
+.simulador {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
   overflow: hidden;
+}
+
+iframe {
+  background-color: aliceblue;
 }
 
 #params {
