@@ -10,6 +10,7 @@ body {
   width: 50%;
   height: 0.4rem;
   background-color: #ffd700;
+  position: fixed;
 }
 
 header,
