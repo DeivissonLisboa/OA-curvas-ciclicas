@@ -6,6 +6,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.15rem !important;
 }
+#progress-bar {
+  width: 50%;
+  height: 0.4rem;
+  background-color: #ffd700;
+}
 
 header,
 h3,
