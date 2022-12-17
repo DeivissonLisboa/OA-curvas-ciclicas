@@ -7,7 +7,7 @@ body {
   font-size: 1.15rem !important;
 }
 #progress-bar {
-  width: 50%;
+  width: 0%;
   height: 0.4rem;
   background-color: #ffd700;
   position: fixed;
