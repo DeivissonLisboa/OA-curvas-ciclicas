@@ -6,11 +6,33 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.15rem !important;
 }
+
 #progress-bar {
   width: 0%;
   height: 0.4rem;
   background-color: #ffd700;
   position: fixed;
+}
+
+button.up {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffd700;
+  color: #fff;
+  opacity: 0;
+  border: 0;
+  position: fixed;
+  right: 2%;
+  top: 90%;
+  transition: 0.3s ease;
+}
+
+button.up:focus {
+  outline: none;
+}
+
+button.up:active {
+  transform: scale(0.98);
 }
 
 header,
