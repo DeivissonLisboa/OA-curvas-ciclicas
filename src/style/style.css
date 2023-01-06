@@ -8,7 +8,9 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  font-size: 1.15rem !important;
+  font-size: 1.15rem;
+  margin: 0;
+  padding: 0;
 }
 
 #progress-bar {
@@ -49,7 +51,7 @@ button.up:active {
 header,
 h3,
 #construcoes {
-  margin-top: 1.5rem !important;
+  margin-top: 1.5rem;
 }
 
 header {
@@ -59,8 +61,8 @@ header {
 }
 
 @media (max-width: 650px) {
-  body {
-    overflow-x: hidden;
+  .container {
+    width: 90%;
   }
 
   header {
@@ -72,7 +74,7 @@ header {
 }
 
 a {
-  color: #000 !important;
+  color: #000;
 }
 
 .content {
@@ -94,7 +96,7 @@ h2 {
 }
 
 .container {
-  max-width: 720px !important;
+  max-width: 860px;
   display: flex;
   flex-direction: column;
 }
