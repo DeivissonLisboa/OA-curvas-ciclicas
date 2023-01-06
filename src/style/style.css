@@ -1,17 +1,21 @@
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
-  display: contents;
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   font-size: 1.15rem !important;
 }
 
 #progress-bar {
-  width: 0%;
+  position: fixed;
+  width: 0;
   height: 0.4rem;
   background-color: #ffd700;
-  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 button.up {
@@ -35,6 +39,11 @@ button.up:active {
   transform: scale(0.98);
 }
 
+.container {
+  width: 80%;
+  height: 100%;
+}
+
 header,
 h3,
 #construcoes {
@@ -45,6 +54,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 650px) {
+  header {
+    /* background-color: #555; */
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+  }
 }
 
 a {
