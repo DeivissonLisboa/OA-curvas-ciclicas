@@ -57,6 +57,10 @@ header {
 }
 
 @media (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+
   header {
     /* background-color: #555; */
     display: flex;
