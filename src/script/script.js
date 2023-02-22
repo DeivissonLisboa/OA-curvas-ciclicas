@@ -1,6 +1,6 @@
 const container = document.querySelector(".container")
 const progress = document.getElementById("progress-bar")
-const upBtn = document.querySelector(".up")
+const upBtn = document.querySelector(".scroll-up")
 
 window.addEventListener("scroll", () => {
   progress.style.width = `${

@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+:root {
+  --clr-1: #fff;
+  --clr-2: #ffd700;
+}
+
 #progress-bar {
   position: fixed;
   width: 0;
-  height: 0.4rem;
-  background-color: #ffd700;
+  height: 0.4em;
+  background-color: var(--clr-2);
   top: 0;
   left: 0;
 }
 
-button.up {
+.scroll-up {
   width: 2rem;
   height: 2rem;
-  background-color: #ffd700;
+  background-color: var(--clr-2);
   color: #fff;
   opacity: 0;
   border: 0;
@@ -22,10 +27,10 @@ button.up {
   transition: 0.3s ease;
 }
 
-button.up:focus {
+.scroll-up:focus {
   outline: none;
 }
 
-button.up:active {
+.scroll-up:active {
   transform: scale(0.9);
 }
