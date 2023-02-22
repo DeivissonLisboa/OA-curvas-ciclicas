@@ -91,6 +91,10 @@ h2 {
 
 p {
   text-indent: var(--fs-2);
+}
+
+p,
+li {
   text-align: justify;
 }
 
