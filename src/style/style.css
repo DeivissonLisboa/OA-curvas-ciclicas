@@ -89,7 +89,7 @@ h2 {
 }
 
 p {
-  text-indent: 1.25rem;
+  text-indent: var(--fs-2);
   text-align: justify;
 }
 
@@ -100,6 +100,6 @@ figure {
 
 figcaption {
   color: #777;
-  font-size: 1rem;
+  font-size: var(--fs-1);
   text-align: center;
 }
