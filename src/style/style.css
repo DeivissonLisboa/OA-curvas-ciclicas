@@ -58,12 +58,12 @@ a {
   color: #000;
 }
 
-nav {
+header {
   align-items: center;
   margin-top: 2rem;
 }
 
-nav .title {
+header .title {
   font-size: 2.5rem;
 }
 
@@ -110,7 +110,7 @@ figcaption {
 }
 
 @media (width > 40em) {
-  nav {
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
