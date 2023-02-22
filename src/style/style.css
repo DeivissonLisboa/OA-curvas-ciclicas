@@ -3,6 +3,17 @@
 :root {
   --clr-1: #fff;
   --clr-2: #ffd700;
+
+  --fs-1: 1rem;
+  --fs-2: 1.25rem;
+  --fs-3: 1.5rem;
+  --fs-4: 2rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
 }
 
 #progress-bar {
@@ -33,4 +44,32 @@
 
 .scroll-up:active {
   transform: scale(0.9);
+}
+
+.container {
+  width: min(90vw, 50em);
+  font-size: var(--fs-2);
+  letter-spacing: 0.05rem;
+}
+
+a {
+  color: #000;
+}
+
+nav {
+  align-items: center;
+  margin-top: 2rem;
+}
+
+nav .title {
+  font-size: 2.5rem;
+}
+
+.container > * + *,
+article > * + * {
+  margin-top: 2rem;
+}
+
+section > * + * {
+  margin-top: 1rem;
 }
