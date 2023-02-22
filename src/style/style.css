@@ -94,7 +94,7 @@ p {
 }
 
 p,
-li {
+li:not(nav li) {
   text-align: justify;
 }
 
