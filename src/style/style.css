@@ -71,5 +71,17 @@ article > * + * {
 }
 
 section > * + * {
-  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+h1 {
+  font-size: var(--fs-4);
+}
+
+h2 {
+  font-size: var(--fs-3);
+}
+
+p {
+  text-indent: 1.25rem;
 }
