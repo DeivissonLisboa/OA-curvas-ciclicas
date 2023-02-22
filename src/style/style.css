@@ -103,3 +103,15 @@ figcaption {
   font-size: var(--fs-1);
   text-align: center;
 }
+
+@media (width > 40em) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .span-2 {
+    grid-column: span 2;
+  }
+}
