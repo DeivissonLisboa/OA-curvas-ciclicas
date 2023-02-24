@@ -146,6 +146,10 @@ figure a {
   figure.parametrica img {
     width: 50%;
   }
+
+  figcaption {
+    font-size: var(--fs-2);
+  }
 }
 
 @media print {
