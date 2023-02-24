@@ -147,3 +147,14 @@ figure a {
     width: 50%;
   }
 }
+
+@media print {
+  #progress-bar,
+  .scroll-up {
+    display: none;
+  }
+
+  figure {
+    page-break-inside: avoid;
+  }
+}
