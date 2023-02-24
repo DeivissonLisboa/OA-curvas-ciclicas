@@ -27,8 +27,8 @@ body {
 }
 
 .scroll-up {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: var(--clr-2);
   color: #fff;
   opacity: 0;
@@ -110,6 +110,10 @@ figcaption {
   text-align: center;
 }
 
+figure.parametrica img {
+  width: 100%;
+}
+
 figure a {
   position: absolute;
   bottom: 0;
@@ -118,6 +122,10 @@ figure a {
 }
 
 @media (width > 40em) {
+  .container {
+    font-size: var(--fs-3);
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -132,5 +140,9 @@ figure a {
 
   .span-2 {
     grid-column: span 2;
+  }
+
+  figure.parametrica img {
+    width: 50%;
   }
 }
