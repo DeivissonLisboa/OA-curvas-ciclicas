@@ -101,12 +101,20 @@ li:not(nav li) {
 figure {
   display: grid;
   place-items: center;
+  position: relative;
 }
 
 figcaption {
   color: #777;
   font-size: var(--fs-1);
   text-align: center;
+}
+
+figure a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
 }
 
 @media (width > 40em) {
